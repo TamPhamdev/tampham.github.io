@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../../../asset/js/jquery-3.3.1.min.js"></script>
+	<script src="../../../asset/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../../../asset/css/bootstrap.min.css">
+	<script src="../../../asset/js/fontawesome-all.js"></script>
+	<link rel="stylesheet" href="../../../asset/css/template.css">
+	<link rel="stylesheet" href="../../../asset/css/listofshow.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<title>Regional Shows | 42nd Street</title>
+</head>
+<body>
+	<!-- Nav bar -->
+	<nav class="navbar sticky-top navbar-expand-sm navbar-dark menutop">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Brand -->
+		<a class="navbar-brand" href="../../../index.html"><h2>Theatre.com</h2></a>
+		
+		<!-- Links -->
+		<div class="container">
+			<div class="collapse navbar-collapse" id="nav-content">   
+				<ul class="nav navbar-nav mx-auto mainmenu">
+					<li class="nav-item">
+						<a class="nav-link" href="../../../index.html">HOME</a>
+					</li>
+					<!-- Dropdown menu -->
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">LIST OF SHOW</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="../RegionalShow.html">REGIONAL SHOWS</a>
+							<a class="dropdown-item" href="../SpanishShow.html">SPANISH SHOWS</a>
+							<a class="dropdown-item" href="../EnglishShow.html">ENGLISH SHOWS</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">FEATURES</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="../../auditorium/listauditorium.html">AUDITORIUM</a>
+							<a class="dropdown-item" href="../../artist/listartist.html">ARTIST GALLERY</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle"  id="Preview" href="../../magazines.html" role="button" aria-haspopup="true" aria-expanded="false">MAGAZINES</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="#">THEATRE SPEAK</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../info1.html">INFO</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End navbar -->
+	<!-- Container -->
+    <div class="container" style="margin-top: 50px">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Gallery -->
+                <div class="box1" style="padding-left: 0;text-align: center">
+                    <div class="row" style=" width: 100%">
+                        <div class="col-sm-12" style="padding: 0px">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="../../../asset/Images/ListofShow/RegionalShow/42Street/12-42nd-Street-musical.jpg" class="img-fluid" style="width:100%;object-fit: cover">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="../../../asset/Images/ListofShow/RegionalShow/42Street/14-42nd-Street-musical.jpg" class="img-fluid" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="../../../asset/Images/ListofShow/RegionalShow/42Street/42nd-Street-11888.jpg" class="img-fluid" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="../../../asset/Images/ListofShow/RegionalShow/42Street/42nd-Street-Clare-Rickard-Ella-Martine-Jasna-Ivir-Clare-Halse-Emma-Caffrey-cBrinkhoff-Moegenb.jpg.750x400_q85_box-0,66,1000,600_crop_detail.jpg" class="img-fluid" style="width:100%">
+                            </div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+                <!-- End Gallery -->
+                <!-- Text info -->
+                <div class="container" style="padding-top: 30px;padding-bottom: 30px">
+
+                    <!-- Thay ở đây//////////////////////////////////////////////////////////////////////////////////// -->
+					<p style="text-align: justify"><strong>42nd Street</strong>, the ultimate Broadway musical, runs in London on the West End’s biggest stage at the <a href="#">Lyric Hammersmith</a>.</p>
+
+					<p style="text-align: justify">Based on the 1932 novel by <a href="#">Bradford Ropes</a>( which was subsequently adapted for the silver screen the following year), 42nd Street tells of the great director Julian Marsh and his upcoming production of the musical Pretty Lady. But when the show’s star is forced to drop out of the production, Marsh calls on unknown chorus girl Peggy Sawyer, who takes to the stage a “youngster” and comes back a “star”. With a classic score of musical theatre standards including<em>"We're in the Money", "Lullaby of Broadway", "42nd Street" and "About a Quarter to Nine"</em>, this heart-warming musical provides exceptional tap routines and classic comedy.</p>
+					<h4 style="color: black;font-style: italic"><strong>ABOUT 42ND STREET:</strong></h4>
+                    <p style="text-align: justify">As the curtain opens on America in 1932 at the heart of the Great Depression, chorines and gypsies get wind that acclaimed Broadway producer Julian Marsh is casting his new musical show. As an extensive tap audition begins, we're introduced to fresh-off-the-bus Peggy Sawyer, a talented and enthusiastic young star who manages to pass her audition and join the company.
+					Dorothy Brock, an over the hill star is set to be the leading lady in 'Pretty Lady', and her beau Abner Dillon has $100,000 to invest in the production, despite the fact that the Dorothy has fallen in love with one of her old stage partners Pat Denning. As the group head to Philadelphia for their out of town try-out, Dorothy breaks off her relationship with Dillon in a move that threatens the entire production. On opening night Peggy bumps into Dorothy during a routine, sending the star to the floor with a broken ankle forcing the curtain to come down. The question now is, who will take over the role and be the new star, as the show must go on...
+                    </p>
+
+                </div>
+                <!-- End Textinfo -->
+
+                <!-- Right Column -->
+            </div>
+            <div class="col-sm-4">
+                <h5 class="profile_details_item" style="text-align: left">
+                    <strong>Show details</strong>
+                </h5>
+                <div style="text-align: right">
+
+                    <div class="profile_details_item">
+                        <div class="profile_details_item_title">Location</div>
+						<div class="profile_details_item_desc"><a href="#">Lyric Hammersmith</a></div>
+                    </div>
+                    <hr style="width: 100%">
+                    <div class="profile_details_item">
+                        <div class="profile_details_item_title">Tickets Info</div>
+                        <div class="profile_details_item_desc">+123 456 7890</div>
+                    </div>
+                    <hr style="width: 100%">
+                    <div class="profile_details_item">
+                        <div class="profile_details_item_title">Running Time</div>
+                        <div class="profile_details_item_desc">2 hrs 30 mins</div>
+                    </div>
+                    <hr style="width: 100%">
+                    <div class="profile_details_item">
+                        <div class="profile_details_item_title">Categories:</div>
+                        <div class="profile_details_item_desc">
+                            <span class="cmsmasters_profile_category">
+                                <a href="#" class="cmsmasters_cat_color cmsmasters_cat_41" rel="category tag">Musical</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container for the image gallery -->
+    </div>
+	<!-- End container -->
+	<!-- Footer -->
+	<footer>
+		<div class="top_footer">
+		 	<div class="container">
+		 		<div class="row">
+					<!-- Start col 1 -->
+					<div class="col-sm-3 col1_4">
+						<div class="top">
+							<h3 class="title-footer">Theatre.com</h3>
+						</div>
+						<div class="bottom">
+							<p>Theatre.com is a website used to provide information about various theatre shows going on and where. The theatre.com represents the information all the theatre events of events various languages. Various famous theatre artist details must also be included in the application </p>
+							<a href="../../info1.html" class="readmore"><span>Read More</span> <i class="fa fa-angle-right" style="color: white; padding-top: 3px;"></i> </a>
+						</div>
+					</div>
+					<!-- End col 1 -->
+
+					<!-- Start col 2-4 -->
+					<div class="col-sm-3 col2_4">
+						<h3 class="title-footer">Info</h3>
+						<div class="row">
+							<div class="col-sm-2"><i class="fas fa-map-marker-alt" style="color: #CBAB6E;"></i></div> 
+							<div class="col-sm-10" style="padding-left: 12px;"> <span> 590 Cach Mang Thang 8. HCM City</span></div>
+						</div>	
+						<br>
+						<div class="row">		
+							<div class="col-sm-2"> <i class="far fa-envelope" style="color: #CBAB6E;"></i></div>
+							<div class="col-sm-10" style="padding-left: 12px;"><a href="mailto:support@theatre.com" style="text-decoration: none; color: #636363;">support@theatre.com</a></div>
+						</div>
+						<br>
+						<div class="row">		
+							<div class="col-sm-2"> <i class="fas fa-mobile-alt" style="color: #CBAB6E;"></i></div> 
+							<div class="col-sm-10" style="padding-left: 12px;"><span>Call Us: 0234567890</span> </div>
+						</div>	
+					</div>
+					<!-- End col 2-4 -->
+
+					<!-- Start col 3-4 -->
+					<div class="col-sm-3 col3_4">
+						<h3 class="title-footer">Social</h3>
+						<div class="info-widget">	
+							<ul class="social">
+								<li id="infolist"><a href="#" class="infotext">Facebook </a></li>
+								<li class="infolist"> <a href="#" class="infotext">Instagram </a> </li>
+								<li class="infolist"> <a href="#" class="infotext"> Twitter </a> </li>
+								<li class="infolist"> <a href="#" class="infotext"> Youtube </a> </li>
+							</ul>
+						</div>		
+
+					</div>		
+					<!-- End col 3-4 -->
+
+					<!-- start col 4-4 -->
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3256242201446!2d106.6641389141826!3d10.786353361961352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23ca5d8db%3A0x24d414f45e5a523!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgcGjGsOG7nW5nIDExLCBRdeG6rW4gMywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1521229885625" width="250" height="250"  style="border:1"></iframe>
+							</div>
+						</div>
+					</div> <!-- End col 4-4 -->
+				</div> <!-- End row -->
+		 	</div><!--  het container -->
+		 </div><!--  het top footer -->
+		 <div class="bottom_footer">
+		 		<div class="container text-sm-center">
+		 			<!-- copy right -->
+		 			<h2 class="title-footer">Theatre.com</h2>
+		 			<small>&#9426; 2018 Theatre </small>
+		 		</div> <!-- Endcontainer -->
+		 </div> <!-- End bottom footer -->
+	</footer> <!-- End footer -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+}
+.hero-image-artist {
+    background-image: url("../Images/template/12.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-image-auditorium {
+    background-image: url("../Images/template/23.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+
+  }

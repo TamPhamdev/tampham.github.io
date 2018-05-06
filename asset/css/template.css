@@ -1,0 +1,160 @@
+/* Reset CSS */
+*{
+	margin: 0; padding: 0;
+}
+
+::selection {
+	color: #fff;
+	background: #B49761;
+}
+::-webkit-selection {
+	color: #fff;
+	background: #B49761
+}
+::-moz-selection {
+	color: #fff;
+	background: #B49761
+}
+/* CSS for Menu bar */
+
+nav.navbar {
+  background: #000;
+  opacity: 0.7;
+  color: #fff;
+}
+
+h2 {font-family: "Cormorant Garamond", Arial, Helvetica, "Nimbus Sans L", sans-serif; font-weight: bold;
+	color: white;}
+
+.mainmenu li.nav-item a.nav-link {
+	font-family: 'Sato', sans-serif;
+	color: #a1b1bc;
+	font-size: 16px;
+	padding: 1px 44px;
+}
+.mainmenu li.nav-item a.nav-link:hover {
+	color: #CBAB6E;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  background-color: #C6C7C9;
+}
+.mainmenu li.nav-item.active a.nav-link {
+	color: #CBAB6E;
+}
+
+/*Load Effect */
+
+@keyframes out {
+	from{opacity: 0; transform: translateY(-200px);}
+	to{opacity: 1; transform: translateY(0px);}
+}
+
+.menutop {
+	animation: out .8s forwards;	
+}
+/* End menu bar */
+
+
+/* CSS for slider */
+
+.carousel-caption {
+	position: absolute;
+	font-family: "Cormorant Garamond", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	text-align: center;
+	max-width: 100%;
+	top:26%;
+}
+h1 .caption-style {
+	font-family: "Cormorant Garamond", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size: 180px;
+	font-weight: 700;
+	line-height: 100px;
+}
+
+h3 .caption-style {
+	font-family: "Cormorant Garamond", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-weight: 400;
+	font-size: 38px;
+	line-height: 100px;
+}
+h4 .caption-style {
+	font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 100px;
+}
+
+div .title_quote {
+	word-spacing: 6px;
+	font-family: "Cormorant Garamond", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+#titlequote {
+	padding-top: 80px;
+}
+
+
+/* CSS for Footer */
+
+/*	Top footer */
+.title-footer{ 
+	font-family: "Cormorant Garamond", Arial, Helvetica, "Nimbus Sans L", sans-serif; font-weight: bold;
+	margin-top: 30px;
+}
+
+
+footer {
+	padding-top: 20px;
+	background-color: #000;
+	color: #6E6E6E;
+}
+
+.title-footer {
+	color: #fff;
+}
+
+a.readmore:hover {
+	text-decoration: none;
+	background-color:#A49F94 ;
+}
+
+a.readmore {
+	padding: 15px 23px;
+	color: #fff;
+	background-color: #CBAB6E;
+}
+
+ul {	
+		list-style-type: none;
+		font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+#infolist {
+	padding-bottom: 13px;
+	
+}
+
+.infolist {
+	padding: 12px 0px;
+	border-top: 1px solid #6E6E6E;
+}
+
+.infotext {
+	color: #6E6E6E;	
+}
+
+
+
+.infotext:hover {
+	text-decoration: none;
+	color: #CBAB6E;
+}
+
+.map {
+	padding: 30px 10px;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* End top footer */

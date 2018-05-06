@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/esm/popper-utils.js"></script>
+	<script src="../asset/js/jquery-3.3.1.min.js"></script>
+	<script src="../asset/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+	<script src="../asset/js/fontawesome-all.js"></script>
+	<link rel="stylesheet" href="../asset/css/info.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<title>Info</title>
+</head>
+<body>
+
+	<!--nav bar -->
+	<nav class="navbar sticky-top navbar-expand-sm navbar-dark menutop">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Brand -->
+		<a class="navbar-brand" href="../index.html"><h2>Theatre.com</h2></a>
+
+		<!-- Links -->
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="nav-content">   
+				<ul class="nav navbar-nav mx-auto mainmenu">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">HOME</a>
+					</li>
+					<!-- Dropdown menu -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">LIST OF SHOW</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="ListofShow/RegionalShow.html">REGIONAL SHOWS</a>
+							<a class="dropdown-item" href="ListofShow/SpanishShow.html">SPANISH SHOWS</a>
+							<a class="dropdown-item" href="ListofShow/EnglishShow.html">ENGLISH SHOWS</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">FEATURES</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="auditorium/listauditorium.html">AUDITORIUM</a>
+							<a class="dropdown-item" href="artist/listartist.html">ARTIST GALLERY</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle"  id="Preview" href="magazines.html" role="button" aria-haspopup="false" aria-expanded="false">  MAGAZINES </a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="#">THEATRE SPEAK</a>
+						</div>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="info1.html">INFO</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End navbar -->
+
+	<div class="wrapper" style="background-color: #f8f8f8;">
+		<div class="bg-container text-center">
+			<div class="d-flex align-items-center justify-content-center ">
+				<h2 class="caption">INFO</h2>
+				<img src="../asset/Images/info/info-bg.jpg" alt="" class="bg_info" >
+			</div>
+		</div>	
+
+		<div class="info-container container">
+			<div class="row">
+				<div class="col-sm-6 mx-auto">
+					<h3 class="caption"> THEATRE INFO</h3>
+					<div class="row">
+						<div class="col-sm-10">
+							<p class="txt-info">The only theatre of its kind in Baltimore, The Charles has the unique distinction of offering first-run specialty films in addition to Hollywood movies, foreign films and cinema classics. The 1150-seat, 23,000 square-foot movie house is located in one of Charles Street’s most intriguing historic buildings. </p>
+						</div>
+					</div>
+
+				</div><div class="col-sm-6 mx-auto">
+					<img src="../asset/Images/info/concessions.jpg" alt="" width="600" height="399" style="max-width: 100%; height=auto;">
+				</div>
+			</div>
+		</div>
+
+		<div class="contact container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="caption">
+						<h2 style="font-family: 'Lato', sans-serif; font-size: 60px; font-weight: 600; color: #C7A84C; margin: 60px 0;">Contact Us</h2> 
+					</div>
+
+					<div class="row">
+						<div class="status" id="status" style="color: #F44336 !important; font-size: 20px;font-weight: 600;border-radius: 6px; padding: 10px; margin:auto; "> </div>
+
+					</div>
+
+					<form name="form" id="contact-form" onsubmit="return validateForm()">
+
+						<input name="name" type="text" placeholder="Name" class="form_control" id="name" >
+
+						<input name="email" type="text" placeholder="Email"  class="form_control" id="email" >
+
+						<input name="message" class="form_control" placeholder="Massage" id="message"  rows="5">
+
+
+
+						<input  style="cursor: pointer;" type="submit" class="form_control submit" id="submit" value="Send Message" onsubmit="validateForm()">
+					</form>
+				</div>
+
+				<div class="col-sm-6 text_contact">
+					<h3 style="font-family: 'Lato', sans-serif; font-size: 60px; font-weight: 600; padding:58px 100px 88px 0; color: #C7A84C;"> Get in touch</h3>
+					<p style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 400; line-height: 35px; padding-right: 100px;">Do you have any questions? <br> Please do not hesitate to contact us directly. Our team will come back to you within matter of hours to help you.</p>
+				</div>		
+			</div>
+		</div>		
+		<div class="container" style="background-color: #f8f8f8;">
+			<div class="bottom_footer">
+				<div class="container-fluid text-sm-center user">
+					<span><h3 class="caption" style="color: #C7A84C; padding: 80px 0;font-family: 'Lato', sans-serif; font-size: 60px; font-weight: 600;">Meet Our Team</h3></span>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="oneuser">
+								<div class="imguser">
+									<img src="../asset/Images/info/avt.jpg" alt="">
+									<h2 class="name"> <em>PHAM HUYNH CHI TAM </em></h2>
+									<h3 class="description">Student  </h3>
+									Hover me
+								</div>
+								<div class="infouser">
+									<h3 class="name"> PHAM HUYNH CHI TAM</h3>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto, quod impedit minus quam reiciendis commodi et at. Delectus, veniam!</p>
+									<a href="#"><i class="fab fa-facebook icon-user"></i> </a> <a href="#"><i class="fab fa-instagram icon-user"></i> </a> <a href="#"><i class="fab fa-twitter icon-user"></i> </a>
+								</div>
+							</div>	
+
+						</div>
+						<div class="col-sm-4">
+							<div class="oneuser">
+								<div class="imguser">
+									<img src="../asset/Images/info/avt.jpg" alt="">
+									<h2 class="name"> <em>PHAM HUYNH CHI TAM </em></h2>
+									<h3 class="description">Student  </h3>
+									Hover me
+								</div>
+								<div class="infouser">
+									<h3 class="name"> PHAM HUYNH CHI TAM</h3>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto, quod impedit minus quam reiciendis commodi et at. Delectus, veniam!</p>
+
+									<a href="#"><i class="fab fa-facebook icon-user"></i> </a> <a href="#"><i class="fab fa-instagram icon-user"></i> </a> <a href="#"><i class="fab fa-twitter icon-user"></i> </a>
+								</div>	
+							</div>				
+
+
+						</div>
+						<div class="col-sm-4">
+							<div class="oneuser">
+								<div class="imguser">
+									<img src="../asset/Images/info/avt.jpg" alt="">
+									<h2 class="name"> <em>PHAM HUYNH CHI TAM </em></h2>
+									<h3 class="description">Student  </h3>
+									Hover me
+								</div>
+
+								<div class="infouser">
+									<h3 class="name"> PHAM HUYNH CHI TAM</h3>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto, quod impedit minus quam reiciendis commodi et at. Delectus, veniam!</p>
+									<a href="#"><i class="fab fa-facebook icon-user"></i> </a> <a href="#"><i class="fab fa-instagram icon-user"></i> </a> <a href="#"><i class="fab fa-twitter icon-user"></i> </a>
+								</div>	
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>		
+		</div>			
+		
+		<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="434" id="gmap_canvas" src="https://maps.google.com/maps?q=nhà hát thành phố&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.pureblack.de/webdesign-duesseldorf/"></a><style>.mapouter{overflow:hidden;height:434px;width:100%;}.gmap_canvas {background:none!important;height:434px;width:100%;}</style></div>
+	</div>
+
+
+
+	
+
+
+
+
+	
+	<footer>
+		<div class="top_footer">
+			<div class="container">
+				<div class="row">
+					<!-- Start col 1 -->
+					<div class="col-sm-3 col1_4">
+						<div class="top">
+							<h3 class="title-footer">Theatre.com</h3>
+						</div>
+						<div class="bottom">
+							<p>Theatre.com is a website used to provide information about various theatre shows going on and where. The theatre.com represents the information all the theatre events of events various languages. Various famous theatre artist details must also be included in the application </p>
+							<a href="info1.html" class="readmore"><span>Read More</span> <i class="fa fa-angle-right" style="color: white; padding-top: 3px;"></i> </a>
+						</div>
+					</div>
+					<!-- End col 1 -->
+
+					<!-- Start col 2-4 -->
+					<div class="col-sm-3 col2_4">
+						<h3 class="title-footer">Info</h3>
+						<div class="row">
+							<div class="col-sm-2"><i class="fas fa-map-marker-alt" style="color: #CBAB6E;"></i></div> 
+							<div class="col-sm-10" style="padding-left: 12px;"> <span> 590 Cach Mang Thang 8. HCM City</span></div>
+						</div>	
+						<br>
+						<div class="row">		
+							<div class="col-sm-2"> <i class="far fa-envelope" style="color: #CBAB6E;"></i></div>
+							<div class="col-sm-10" style="padding-left: 12px;"><a href="mailto:support@theatre.com" style="text-decoration: none; color: #636363;">support@theatre.com</a></div>
+						</div>
+						<br>
+						<div class="row">		
+							<div class="col-sm-2"> <i class="fas fa-mobile-alt" style="color: #CBAB6E;"></i></div> 
+							<div class="col-sm-10" style="padding-left: 12px;"><span>Call Us: 0234567890</span> </div>
+						</div>	
+					</div>
+					<!-- End col 2-4 -->
+
+					<!-- Start col 3-4 -->
+					<div class="col-sm-3 col3_4">
+						<h3 class="title-footer">Social</h3>
+						<div class="info-widget">	
+							<ul class="social">
+								<li id="infolist"><a href="#" class="infotext">Facebook </a></li>
+								<li class="infolist"> <a href="#" class="infotext">Instagram </a> </li>
+								<li class="infolist"> <a href="#" class="infotext"> Twitter </a> </li>
+								<li class="infolist"> <a href="#" class="infotext"> Youtube </a> </li>
+							</ul>
+						</div>		
+
+					</div>		
+					<!-- End col 3-4 -->
+
+					<!-- start col 4-4 -->
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="map">
+								<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=nhà hát thành phố&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+								
+							</div>
+						</div>
+					</div> <!-- End col 4-4 -->
+				</div> <!-- End row -->
+			</div><!--  End container -->
+		</div> <!-- End top footer -->
+
+
+
+
+		<!-- copy right -->
+		<div class="text-center" style="padding: 70px 0px;">
+			<h2 class="title-footer">Theatre.com</h2>
+			<b> &#9426; 2018 Theatre</b>
+		</div><!--  Endcontainer -->
+	</div> <!-- End bottom footer -->
+</footer>
+
+<script>
+	function validateForm() {
+		var name =  document.getElementById('name').value;
+		if (name == "") {
+			document.getElementById('status').innerHTML = "Name cannot be empty";
+			return false;
+		} else {
+			if (name.length >= 6 && name.length <= 8) {
+			} else {
+		document.getElementById('status').innerText = "* Please enter between " + "6" + " and " + "8" + " characters *"; // This segment displays the validation rule for username
+		return false;
+
+	}
+}
+
+
+var email =  document.getElementById('email').value;
+if (email == "") {
+	document.getElementById('status').innerHTML = "Email cannot be empty";
+
+	return false;
+} else {
+	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if(!re.test(email)){
+		document.getElementById('status').innerHTML = "Email format invalid";
+
+		return false;
+	}
+}
+
+var message =  document.getElementById('message').value;
+if (message == "") {
+	document.getElementById('status').innerHTML = "Message cannot be empty";
+	return false;
+} 
+else {
+	if (message.length >= 10 && message.length <= 100) {
+	} else {
+		document.getElementById('status').innerText = "* Please enter more than " + "10" + " characters *"; // This segment displays the validation rule for username
+		return false;
+
+	}
+}
+document.getElementById('status').innerHTML = "Sending...";
+document.getElementById('contact-form').submit();
+
+}
+</script>
+
+
+</body>
+</html>
